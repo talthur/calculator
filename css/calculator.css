@@ -19,10 +19,12 @@ body{
     width: 80%;
     align-items: center;
     justify-content: center;
-    background-color:gainsboro;
-    margin: auto;
+    background-color:rgb(235, 235, 235);
+    margin: 3em auto;
     padding: 2em;
     border-radius: 30px;
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.1), 0 15px 30px 0 rgba(0,0,0,0.2);
+
 
 }
 
@@ -33,11 +35,13 @@ body{
     font-size: 1.2em;
     margin: 0.5em;
     height: 1.5em;
+    color: rgb(107, 107, 107);
+    display: block;
 
 }
 
 .calculator > button:hover{
-    background-color: bisque;
+    background-color: rgb(255, 241, 225);
 
 }
 
@@ -51,11 +55,24 @@ body{
 
 .screen{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     background-color: aliceblue;
     min-height: 120px;
     border-radius: 20px;
+    padding: 2em;
 }
 
 .operator{
-    background-color: blue;
+    background-color: aquamarine;
 }
+
+.previous-number{
+    color: rgb(107, 107, 107);
+}
+
+.current-number{
+    font-size: 2em;
+    color: rgb(107, 107, 107);
+}
+
