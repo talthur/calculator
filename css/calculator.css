@@ -15,8 +15,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(120px, auto) repeat(5, 60px);
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
     align-items: center;
     justify-content: center;
     background-color:rgb(235, 235, 235);
@@ -69,10 +69,17 @@ body{
 
 .previous-number{
     color: rgb(107, 107, 107);
+    font-size: 1.1em;
 }
 
 .current-number{
-    font-size: 2em;
+    font-size: 2.3em;
     color: rgb(107, 107, 107);
+}
+
+@media screen and (min-width: 950px){
+    .calculator {
+        max-width: 40%;
+    }
 }
 
